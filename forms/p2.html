@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <style>
+    body{
+      background-color: red;
+    }
+    div{
+      padding: 30px;
+      background-color: aliceblue;
+      width: fit-content;
+    }
+    input{
+      border: none;
+      font-size: 20px;
+      outline: none;
+      border: 1px solid red;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      width: 100%;
+      border-radius: 10px;
+
+    }
+    .abhi{
+      width: 100%;
+      background-color: purple;
+      color: white;
+      border: none;
+    }
+    input:hover{
+      background-color: rgb(177, 106, 106);
+      transition: 0.6s;
+      transform: scale(1.5);
+    }
+    .abhi:hover{
+      background-color: rgb(114, 204, 204);
+    }
+
+  </style>
+</head>
+<body>
+  <center>
+    <h1>Forms With All the input </h1>
+    <div>
+      <form>
+        <input type="text" name="firstname" placeholder="enter Your name" required><br>
+        <input type="checkbox" name="skill1"> <label for="skill1">C++</label>
+        <input type="checkbox" name="Skill2"><label for="skill2">java</label><br>
+        <input type="color" name="cc" id="cc"><br>
+        <input type="date" name="today"  required placeholder="enter todays date"><br>
+        <input type="datetime" name="dt" placeholder="enter the Time" required> <br>
+        <input type="email" name="mail" required placeholder="Enter the mail" ><br>
+        <input type="file" name="f" required placeholder="inter your 10th marks card"><br>
+        <input type="month" name="mon" required placeholder="enter date"><br>
+        <input type="password" name="ps" required placeholder="Enter the password"><br>
+        <input type="radio" name="county" ><label for="county">India</label>
+        <input type="radio" name="county" ><label for="county">America</label><br>
+        <input type="tel" name="phone" id="" required placeholder="phone Number"><br>
+        <input type="week" name="wee" required placeholder="enter the Week" ><br>
+        <input type="reset" value="reset" class="abhi"><br>
+        <input type="submit" value="submit" class="abhi" >
+    
+      </form>
+    </div>
+  </center>
+  
+</body>
+</html>
