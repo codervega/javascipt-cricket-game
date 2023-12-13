@@ -7,35 +7,41 @@
   <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.yNm72B1ydV37tks_-2gs2QHaLM?rs=1&pid=ImgDetMain" type="image/x-icon">
   <style>
     input{
-      font-size: 40px;
+      font-size: 30px;
       margin-bottom: 10px;
-      border-radius: 10px;
-      align-items: center;
+      border-radius: 10px; 
+      border: none;
+    }
+    
+    input:hover{
+      background-color: rgb(169, 202, 212);
+    }
+    .Abhi1:hover{
+      background-color: rgb(50, 50, 56);
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <center>
-    <div style="width: 80%;background-color: lightgreen;padding: 0;margin: 0;">
+    <div style="width: 80%;background-color: rgb(141, 189, 141);padding: 0;margin: 0;">
       <h1 style="font-size: 70px;padding: 0;margin-top: 0;margin-bottom: 15px;"><strong>College of Engineering </strong></h1>
       <div style="width: 90%;background-color: azure;">
         <form style="padding-top: 25px;">
-          <label for="" style="font-size: 40px;padding-right: 30px;">Student Name<spanp style="color: red;">*</spanp> </label> <input type="text" name="first" id="" placeholder="First" required style="padding-left: 30px;" >
-          <input type="text" name="surname" id="" required placeholder="Surname" style="padding-left: 30px;">  <br><!--why can't i apply padding right here-->
-          <label for="" style="font-size: 40px;padding-right: 18px;">Course you want 
-             to apply form <span style="color: red;">*</span></label><input type="text" name="course" id="" required placeholder="Couse Name"
-             
-             style="width: 54%; padding-left: 30px;"><br>
-             <label for="" style="font-size: 40px; padding-right: 350px;">Date Of Birth <span style="color: red;padding-right: 30px;">*</span><label><input type="date" name="" id="" style="width: 75%;padding-left: 10px;"><br>
+          <label for="" style="font-size: 40px;padding-right: 0px;">Student Name<span style="color: red;">*</span> </label> <input type="text" name="first" id="" placeholder="First" required style="padding-left: 30px; width: 30%;" >
+          <input type="text" name="surname" id="" required placeholder="Surname" style="padding-left: 30px; width: 30%;">  <br><!--why can't i apply padding right here-->
+           <label for="" style="font-size: 40px;padding-right: 18px;">Course you want 
+             to apply form <span style="color: red;">*</span></label><input type="text" name="course" id="" required placeholder="Couse Name"style="width: 34%; padding-left: 30px;"><br>
+             <label for="" style="font-size: 40px; margin-left: 5px;">Date Of Birth <span style="color: red;padding-right: 30px;">*</span><label><input type="date" name="" id="" style="width: 65%;padding-left: 10px;"></label><br>
               <label for="" style="font-size: 40px;">Parent/Gurdian Name <span style="color: red">*</span></label>
-              <input type="text" name="firstp" id="" placeholder="first name" style="width: 30%;padding-left: 30px ;font-size: 37px;" >
-              <input type="text" name="surnamep" id="" placeholder="surname"  style="padding-left: 38px; font-size: 37px;"><br>
-              <label for="" style="font-size: 40px;">Address <span style="color: red; padding-right: 350px;">*</span></label>
-              <input type="text" name="address" required placeholder="Enter Street Address 1" style="padding-left: 30px;width: 50%; margin-left: 100px;" ><br>
-              <input type="text" name="address2" id="" placeholder="street address 2" style="margin-left: 44%; width: 50%;padding-left: 30px;"><br>
-              <input type="text" required placeholder="City" style="padding-left: 30px; width: 23%; margin-left: 44%;">
-              <input type="text" name="Region" id="" placeholder="Region" style="padding-left: 30px;width: 24%;">
-              <input type="text" name="ZIP" id="" placeholder="Postal/ZIP" style="padding-left: 30px; width: 24%;margin-left: 44%;">
+              <input type="text" name="firstp" id="" placeholder="first name" style="padding-left: 30px ;font-size: 37px; width: 22%;" >
+              <input type="text" name="surnamep" id="" placeholder="surname"  style="padding-left: 38px; font-size: 37px; width: 22%;"><br>
+              <label for="" style="font-size: 40px;">Address <span style="color: red;">*</span></label>
+              <input type="text" name="address" required placeholder="Enter Street Address 1" style="padding-left: 30px;width: 63%; margin-left: 100px;" ><br>
+              <input type="text" name="address2" id="" placeholder="street address 2" style="margin-left: 29%; width: 63%;padding-left: 30px;"><br>
+              <input type="text" required placeholder="City" style="padding-left: 30px; width: 29%; margin-left: 30%;">
+              <input type="text" name="Region" id="" placeholder="Region" style="padding-left: 30px;width: 29%;">
+              <input type="text" name="ZIP" id="" placeholder="Postal/ZIP" style="padding-left: 30px; width: 35%;margin-left: 30%;">
               <label for="" style="margin-left: 10px;"><select name="country" id="" style="font-size: 40px;border-radius: 10px;width: 25%;">
                 <option value="India">India</option>
                 <option value="China">China</option>
@@ -43,15 +49,27 @@
                 <option value="America">America</option>
               </select></label><br>
               <label for="" style="font-size: 40px;">Phone No <span style="color: red;">*</span></label>
-              <input type="tel" name="phone" id="" required placeholder="+91 123-345-342" style="padding-left: 30px;width: 80%;"><br>
-              <div style="display: flex;">
-                <div style="display: Flex;flex-direction: column;"><label for="">Email</label>
-                <small style="font-size: 10px;">Your Admission Confirmation 
-                  Will Be send on This </small></div>
-                <div><input type="email" name="email" id="" required placeholder="Email"></div>
+              <input type="tel" name="phone" id="" required placeholder="+91 123-345-342" style="padding-left: 30px;width: 70%;"><br>
+              <div style="display: flex;gap: 30px;">
+                <div style="display: Flex;flex-direction: column;"><label for="">Email <span style="color: red;">*</span></label>
+                  <span style="font-size: 15px;">The admission Confirmation Will Be send <br> via mail</span></div>
+                <div><input type="email" name="email" id="" required placeholder="Email" style="width: 100%;padding-left: 30px;"></div>
               </div>
+              <h2 style="font-size: 30px; margin-right: 65%; margin-bottom: 0;margin-top: 0;">Electronic Signature <span style="color: red;">*</span></h2>
+              <p style="font-size: 20px; margin-right: 65%;margin-top: 0;">Please sign the form to confirm your admission application.</p>
+              <div style="height: 120px;width: 80%;background-color: gainsboro; border: 1px solid black;padding-top: 50px; margin-bottom: 40px;">
+                
+                Sign here
+                <div style="width: 80%;margin-top: 0;padding: 0; margin-bottom: 40px;">
+                  <hr>
+                </div>
+        
+              </div>
+              <input type="submit" value="Submit Here" class="Abhi1" style="width: 80%;background-color: blue;color: white; 
+               ">
         </form>
-      </div>
+      </div><br><br><br>
+      
     </div>
   </center>
   
