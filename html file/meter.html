@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <center>Meter Tag</center>
+  <hr>
+  <meter min="0" max="100" value="35"></meter>
+  <hr>
+  <meter min="0" max="100" low="50" high="100" value="0" id="meter"></meter>
+  <script>
+    let min=0;
+    function meterprogress(){
+       if(min<100){
+            min++;
+            document.getElementById('meter').value=min;
+          }
+       
+    }
+     setInterval("meterprogress()", 100)
+  </script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>progras tag</title>
+  <style>
+    progress{
+      accent-color: red;
+      height: 30vh;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>Progress Tag</h1>
+    <p>there is a progress Tag</p>
+  </center>
+  <hr>
+  <progress></progress>
+  <hr>
+  <progress min="0" max="100" value="50"></progress>
+  <hr>
+  <progress min="0" max="100" value="0" id="progress"></progress>
+  <p id="p"><span id="result">0</span> perecentage has been Completed</p>
+  <script>
+    let min=0;
+    function startprogress(){
+      if(min<100)
+      {
+        min++;
+        document.getElementById('progress').value=min;
+        document.getElementById('result').innerHTML=min;
+      }
+      else{
+        document.getElementById('progress').style.display="none";
+        document.getElementById('p').innerHTML="Completed"
+        document.getElementById('p').style.color="green";
+      }
+    }
+    setInterval("startprogress()",10)
+  </script>
+  
+</body>
+</html>

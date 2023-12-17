@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dailog tag</title>
+  <style>
+ *{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ #dailog{
+  background-color: black;
+  color: white;
+  width: 400px;
+  border-radius: 10px;
+ }
+ #closebtn{
+  float: right;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+ }
+ #closebtn:hover{
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+ }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>Dailog Tag.......!</h1>
+    <p>This tag is used to create the pop-up in our website</p>
+  </center>
+  <hr>
+  <button type="button" id="openDailog">Show Dailog</button>
+  <dialog id="dailog">
+    <button type="button" id="closebtn">&times;</button>
+    <h1>this is a Dailog</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minus vitae repellat hic beatae nemo ea magnam delectus, cupiditate neque corporis ipsum minima ratione quo eveniet quod nisi dolor reiciendis.</p>
+  </dialog>
+  <script>
+    document.getElementById('openDailog').onclick=function(){
+      document.getElementById('dailog').show();
+    }
+    document.getElementById('closebtn').onclick=function(){
+      document.getElementById('dailog').close();
+    }
+  </script>
+  
+</body>
+</html>
