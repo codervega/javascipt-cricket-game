@@ -1,0 +1,64 @@
+.headerback{
+  background-color: black;
+}
+.head-sec-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(66, 66, 66);
+  padding: 2px 50px;
+}
+.back-colo{
+  background-color:green;
+  color: white;
+  font-size: 30px;
+}
+.head-sec-2{
+  display: flex;
+  justify-content: space-around;
+}
+.clr{
+  color:white;
+  font-size: 18px;
+}
+li{
+  color: white;
+}
+ul{
+ list-style-type:none;
+}
+input{
+  background-color: black;
+  outline: none;
+  border:none;
+  color: white;
+}
+option{
+  background-color: rgb(206, 64, 64);
+  border: none;
+  outline:none;
+  color: white;
+}
+.div3{
+  display: flex;
+  gap: 50%;
+
+}
+.ulg{
+display: flex;
+gap: 50px;
+}
+.ho:hover{
+  color: red;
+  cursor: pointer;
+}
+.hero{
+  background: url("./assests/pexels-pascal-bronsert-19474432.jpg") no-repeat center;
+  min-height: 100vh;
+  background-size: cover;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+}

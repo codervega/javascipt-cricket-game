@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    progress{
+      accent-color: red
+      ;
+    }
+  </style>
+</head>
+<body>
+  <progress min="0" max="100" value="10" id="ab"></progress>
+  <p class=""><span id="s"></span>% is completed.....</p>
+  <script>
+    let min=0;
+    function abhi(){
+      if(min<100)
+      {
+        min++;
+        document.getElementById('ab').value=min;
+        document.getElementById('s').innerHTML=min;
+      }
+    }
+    setInterval("abhi()",100);
+  </script>
+</body>
+</html>
