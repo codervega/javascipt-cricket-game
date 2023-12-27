@@ -66,4 +66,25 @@ li:hover{
 h1{
   font-size: 50px;
 }
-
+.kk{
+  color: black;
+}
+.box{
+  border: 1px solid black;
+  padding-top: 5px;
+}
+.most-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.flex-1{
+  display: flex;
+  gap: 10%;
+  align-items: center;
+  justify-content: center;
+}
+.flex-2{
+  display: flex;
+}
